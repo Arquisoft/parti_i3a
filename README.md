@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c3d857aaddeb47dfa71237a7c9ba267c)](https://www.codacy.com/app/pablogarciamiranda/dashboard_i3a?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Arquisoft/dashboard_i3a&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c3d857aaddeb47dfa71237a7c9ba267c)]
 [![Build Status](https://travis-ci.org/Arquisoft/parti_i3a.svg?branch=master)](https://travis-ci.org/Arquisoft/parti_i3a)
 [![codecov](https://codecov.io/gh/Arquisoft/parti_i3a/branch/master/graph/badge.svg)](https://codecov.io/gh/Arquisoft/parti_i3a)
 
