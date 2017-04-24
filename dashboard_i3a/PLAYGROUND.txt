@@ -1,5 +1,11 @@
 Hi!!! English speaking people!!!
 
-Change...
+Playing with github...
 
-Hi..
+-------------------------
+
+Compilar el codigo -> mvn compile
+Crear el jar para ejecutar -> mvn package
+ejecutar -> java -jar target\...
+
+ejecutar tests -> mvn test

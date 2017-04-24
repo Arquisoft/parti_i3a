@@ -3,7 +3,6 @@
 .metadata
 bin/
 tmp/
-kafka_2.11-0.10.2.0/
 *.tmp
 *.bak
 *.swp
@@ -53,6 +52,3 @@ local.properties
 .recommenders/
 
 .DS_Store
-
-*.iml
-.idea
