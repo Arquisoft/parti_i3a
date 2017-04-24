@@ -6,6 +6,8 @@ import java.text.ParseException;
 
 import org.junit.Test;
 
+import es.uniovi.asw.DateConversor;
+
 public class AgeCalculatorTest {
 
 	@Test
