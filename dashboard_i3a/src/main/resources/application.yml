@@ -1,6 +1,6 @@
 server:
   port: 8080
-  contextPath: /dashboard_i3a
+  contextPath: /participants_i3a
 ---
 spring:
   profiles: local,default
