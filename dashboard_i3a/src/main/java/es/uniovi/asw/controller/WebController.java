@@ -103,6 +103,7 @@ public class WebController {
 			model = new ModelAndView("info");
 			model.addObject("userDto", userDto);
 		}
+
 		return model;
 	}
 
