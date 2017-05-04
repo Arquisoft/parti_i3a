@@ -6,6 +6,7 @@
 	<artifactId>dashboard_i3a</artifactId>
 	<name>dashboard_i3a</name>
 	<version>0.0.1</version>
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
