@@ -38,6 +38,13 @@ public class WebController {
 		return "index";
 	}
 
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	public ModelAndView logout() {
+		ModelAndView model = new ModelAndView("login");
+		model.addObject("user", new UserLogin());
+		return model;
+	}
+
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView login(HttpServletRequest request, HttpServletResponse response) {
 

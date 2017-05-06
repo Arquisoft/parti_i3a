@@ -24,14 +24,14 @@ import es.uniovi.asw.repository.UserRepository;
 @IntegrationTest({ "server.port=0" })
 public class ParticipantsTest {
 
-	User user1;
-	User user2;
+	private User user1;
+	private User user2;
 
 	@Autowired
-	UserRepository userRepository;
+	private UserRepository userRepository;
 
 	@Autowired
-	Participants participants;
+	private Participants participants;
 
 	@Before
 	public void setUp() throws Exception {

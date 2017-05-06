@@ -1,15 +1,13 @@
 package es.uniovi.asw.domain;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-import java.sql.Date;
-
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import es.uniovi.asw.DateConversor;
-import es.uniovi.asw.domain.User;
 
 public class UserTest {
 
@@ -19,9 +17,9 @@ public class UserTest {
 	@Before
 	public void setUp() throws Exception {
 		user1 = new User(1L, "dgsama", "1234", "David", "Garcia Gonzalez", "C/Lucio Villegas", "Spanish", "12345678Z",
-				DateConversor.createSqlDate("14-01-1995"));
+		        DateConversor.createSqlDate("14-01-1995"));
 		user2 = new User(1L, "kingInNorth", "gh0st", "John", "Snow", "Winterfell", "Northerm", "01234567A",
-				DateConversor.createSqlDate("04-09-1980"));
+		        DateConversor.createSqlDate("04-09-1980"));
 	}
 
 	@Test
@@ -59,13 +57,11 @@ public class UserTest {
 
 		assertTrue(user1.equals(user2));
 	}
-	
-	
-	@Test
-	public void testEquals_Symmetric() {
-	    Assert.assertTrue(user1.equals(user1) && user1.equals(user1));
-	    Assert.assertTrue(user1.hashCode() == user1.hashCode());
-	}
 
+	@Test
+	public void testEqualsSymmetric() {
+		assertTrue(user1.equals(user1) && user1.equals(user1));
+		assertTrue(user1.hashCode() == user1.hashCode());
+	}
 
 }

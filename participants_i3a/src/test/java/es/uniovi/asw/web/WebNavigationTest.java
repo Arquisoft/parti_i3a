@@ -44,7 +44,7 @@ public class WebNavigationTest {
 		testUser.setPassword("asdf");
 		testUser.setFirstName("example");
 		testUser.setLastName("testUser");
-		Date date = new java.sql.Date(new java.util.Date().getTime());
+		Date date = new Date(new java.util.Date().getTime());
 		testUser.setBirthday(date);
 		userRepository.save(testUser);
 	}

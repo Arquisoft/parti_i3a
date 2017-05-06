@@ -10,7 +10,7 @@ import es.uniovi.asw.repository.UserRepository;
 public class Participants implements GetParticipantInfo, ChangeInfo {
 
 	@Autowired
-	UserRepository userRepository;
+	private UserRepository userRepository;
 
 	/**
 	 * Update the info of a participant having its credentials and new password.

@@ -5,7 +5,6 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
-import org.junit.After;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -25,37 +24,35 @@ import cucumber.api.java.en.When;
 import es.uniovi.asw.Application;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=Application.class, loader=SpringApplicationContextLoader.class)
+@ContextConfiguration(classes = Application.class, loader = SpringApplicationContextLoader.class)
 @IntegrationTest
 @WebAppConfiguration
 public class LandingSteps {
-  
-  @Autowired
-  protected WebApplicationContext context;
 
-  protected MockMvc mvc;
-  protected MvcResult result;
-  
-  @Value("${local.server.port}")
-  protected int port;
+	@Autowired
+	protected WebApplicationContext context;
 
-  
-  @When("^the client calls /$")
-  public void the_client_calls() throws Throwable {
-    Assert.notNull(context);
-    this.mvc = MockMvcBuilders.webAppContextSetup(context).build();
-    result = mvc.perform(get("/")).andReturn();
-  }
+	protected MockMvc mvc;
+	protected MvcResult result;
 
-  @Then("^the client receives status code of (\\d+)$")
-  public void the_client_receives_status_code_of(int status) throws Throwable {
-    assertThat(result.getResponse().getStatus(), is(status));
-  }
+	@Value("${local.server.port}")
+	protected int port;
 
-  @Then("^the client receives the string \"([^\"]*)\"$")
-  public void the_client_receives_the_string(String str) throws Throwable {
-   assertThat(result.getResponse().getContentAsString(), containsString(str));
-  }
-  
+	@When("^the client calls /$")
+	public void the_client_calls() throws Throwable {
+		Assert.notNull(context);
+		this.mvc = MockMvcBuilders.webAppContextSetup(context).build();
+		result = mvc.perform(get("/")).andReturn();
+	}
+
+	@Then("^the client receives status code of (\\d+)$")
+	public void the_client_receives_status_code_of(int status) throws Throwable {
+		assertThat(result.getResponse().getStatus(), is(status));
+	}
+
+	@Then("^the client receives the string \"([^\"]*)\"$")
+	public void the_client_receives_the_string(String str) throws Throwable {
+		assertThat(result.getResponse().getContentAsString(), containsString(str));
+	}
 
 }

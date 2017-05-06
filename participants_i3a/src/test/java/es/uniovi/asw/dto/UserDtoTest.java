@@ -1,8 +1,6 @@
 package es.uniovi.asw.dto;
 
-import static org.junit.Assert.*;
-
-import java.sql.Date;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +18,7 @@ public class UserDtoTest {
 	public void setUp() throws Exception {
 
 		user1 = new User(1L, "dgsama", "1234", "David", "Garcia Gonzalez", "C/Lucio Villegas", "Spanish", "12345678Z",
-				DateConversor.createSqlDate("14-01-1995"));
+		        DateConversor.createSqlDate("14-01-1995"));
 		userdto1 = new UserDto("David", "Garcia Gonzalez", 22, 1L, "prueba@uniovi.es");
 	}
 
