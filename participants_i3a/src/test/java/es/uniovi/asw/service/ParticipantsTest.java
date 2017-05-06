@@ -24,9 +24,6 @@ import es.uniovi.asw.repository.UserRepository;
 @IntegrationTest({ "server.port=0" })
 public class ParticipantsTest {
 
-	private User user1;
-	private User user2;
-
 	@Autowired
 	private UserRepository userRepository;
 
@@ -54,9 +51,10 @@ public class ParticipantsTest {
 		date1 = new Date(formatter.parse(date1string).getTime());
 		date2 = new Date(formatter.parse(date2string).getTime());
 
-		user1 = new User(434L, "lavida", "1234", "Lavida", "De la vida", "C/Lucio Villegas", "Spanish", "12345678Z",
-		        date1);
-		user2 = new User(578L, "kingInNorth", "gh0st", "John", "Snow", "Winterfell", "Northerm", "01234567A", date2);
+		User user1 = new User(434L, "lavida", "1234", "Lavida", "De la vida", "C/Lucio Villegas", "Spanish",
+		        "12345678Z", date1);
+		User user2 = new User(578L, "kingInNorth", "gh0st", "John", "Snow", "Winterfell", "Northerm", "01234567A",
+		        date2);
 
 		userRepository.save(user1);
 		userRepository.save(user2);

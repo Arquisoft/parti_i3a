@@ -2,7 +2,6 @@ package es.uniovi.asw.repository;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +20,7 @@ import es.uniovi.asw.domain.User;
 public class UserRepositoryTest {
 
 	@Autowired
-	UserRepository uR;
-
-	@Before
-	public void setUp() throws Exception {
-
-	}
+	private UserRepository uR;
 
 	@Test
 	public void testFindByLogin() {

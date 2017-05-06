@@ -50,7 +50,7 @@ public class WebNavigationTest {
 	}
 
 	@Test
-	public void IndexMappingTest() {
+	public void indexMappingTest() {
 		assertThat(restTemplate.getForObject("http://localhost:" + port + "/participants_i3a", String.class)
 		        .contains("Welcome"));
 
@@ -59,13 +59,13 @@ public class WebNavigationTest {
 	}
 
 	@Test
-	public void LoginMappingTest() {
+	public void loginMappingTest() {
 		assertThat(restTemplate.getForObject("http://localhost:" + port + "/participants_i3a/login", String.class)
 		        .contains("Login"));
 	}
 
 	@Test
-	public void LoginInfoTest() {
+	public void loginInfoTest() {
 
 		RequestBuilder requestLogin = post("/login").param("u", testUser.getLogin()).param("p", testUser.getPassword());
 
@@ -81,7 +81,7 @@ public class WebNavigationTest {
 	}
 
 	@Test
-	public void ChangePasswordTest() {
+	public void changePasswordTest() {
 
 		String newPassword = "nuevaContraseña";
 
@@ -118,7 +118,7 @@ public class WebNavigationTest {
 
 	//This test was created due a to a bug we found in the code
 	@Test
-	public void ChangePasswordTwoTimesTest() {
+	public void changePasswordTwoTimesTest() {
 
 		String newPassword = "nuevaContraseña";
 

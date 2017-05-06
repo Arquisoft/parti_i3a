@@ -1,4 +1,6 @@
 package es.uniovi.asw;
+
+import java.sql.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -9,7 +11,7 @@ public class DateConversor {
 		final String input = date;
 		final LocalDate localDate = LocalDate.parse(input, DATE_FORMAT);
 
-		java.sql.Date sqlDate = java.sql.Date.valueOf(localDate);
+		Date sqlDate = java.sql.Date.valueOf(localDate);
 		return sqlDate;
 	}
 

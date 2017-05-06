@@ -22,10 +22,10 @@ import es.uniovi.asw.service.Participants;
 public class RESTController {
 
 	@Autowired
-	Participants participants;
+	private Participants participants;
 
 	@Autowired
-	UserRepository userRepository;
+	private UserRepository userRepository;
 
 	@RequestMapping("/users")
 	public List<User> users() {

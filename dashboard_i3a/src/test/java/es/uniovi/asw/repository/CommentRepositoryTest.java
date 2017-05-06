@@ -2,7 +2,6 @@ package es.uniovi.asw.repository;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +20,7 @@ import es.uniovi.asw.domain.Comment;
 public class CommentRepositoryTest {
 
 	@Autowired
-	CommentRepository cR;
-
-	@Before
-	public void setUp() throws Exception {
-	}
+	private CommentRepository cR;
 
 	@Test
 	public void test() {

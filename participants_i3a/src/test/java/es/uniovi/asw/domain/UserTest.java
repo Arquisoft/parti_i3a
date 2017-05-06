@@ -57,11 +57,4 @@ public class UserTest {
 
 		assertTrue(user1.equals(user2));
 	}
-
-	@Test
-	public void testEqualsSymmetric() {
-		assertTrue(user1.equals(user1) && user1.equals(user1));
-		assertTrue(user1.hashCode() == user1.hashCode());
-	}
-
 }

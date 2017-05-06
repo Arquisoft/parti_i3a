@@ -11,7 +11,7 @@ import es.uniovi.asw.DateConversor;
 public class AgeCalculatorTest {
 
 	@Test
-	public void testCalculateAge_Success() throws ParseException {
+	public void testCalculateAgeSuccess() throws ParseException {
 
 		java.sql.Date sqlDate = DateConversor.createSqlDate("09-05-1996");
 
