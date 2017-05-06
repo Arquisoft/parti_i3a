@@ -15,12 +15,12 @@ public class VotesInfoGeneroTest {
 
 	@Test
 	public void test() {
-		List<VoteProposal> votes = new ArrayList<VoteProposal>();
+		List<VoteProposal> votes = new ArrayList<>();
 		User userChico = new User();
 		userChico.setGender("male");
 		User userChica = new User();
 		userChica.setGender("female");
-		for (int i = 0; i < 50; i++){
+		for (int i = 0; i < 50; i++) {
 			if (i % 2 == 0) {
 				VoteProposal v = new VoteProposal();
 				v.setValue(true);
@@ -37,26 +37,20 @@ public class VotesInfoGeneroTest {
 		}
 		VotesInfoGenero vi = new VotesInfoGenero(votes);
 		vi.getInfo();
-		assertTrue(vi.getPerNo()==50);
-		assertTrue(vi.getPerYes()==50);
-		assertTrue(vi.getTotal()==50);
-		assertTrue(vi.getTotalYes()==25);
-		assertTrue(vi.getTotalNo()==25);
-		
-		assertTrue(vi.getMaleNumberYes()==25);
-		assertTrue(vi.getMaleNumberNo()==0);
-		assertTrue(vi.getMalePerYes()==50);
-		assertTrue(vi.getMalePerNo()==0);
-		
-		assertTrue(vi.getFemaleNumberYes()==0);
-		assertTrue(vi.getFemaleNumberNo()==25);
-		assertTrue(vi.getFemalePerYes()==0);
-		assertTrue(vi.getFemalePerNo()==50);
-		
-		
-		
-		
-			
+		assertTrue(vi.getPerNo() == 50);
+		assertTrue(vi.getPerYes() == 50);
+		assertTrue(vi.getTotal() == 50);
+		assertTrue(vi.getTotalYes() == 25);
+		assertTrue(vi.getTotalNo() == 25);
+
+		assertTrue(vi.getMaleNumberYes() == 25);
+		assertTrue(vi.getMaleNumberNo() == 0);
+		assertTrue(vi.getMalePerNo() == 0);
+
+		assertTrue(vi.getFemaleNumberYes() == 0);
+		assertTrue(vi.getFemaleNumberNo() == 25);
+		assertTrue(vi.getFemalePerYes() == 0);
+
 	}
 
 }
