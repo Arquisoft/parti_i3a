@@ -9,12 +9,12 @@
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	crossorigin="anonymous" />
 <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
-<script>
+<!--<script>
 	function beginrefresh() {
 		setInterval("location.reload();", 5000)
 	}
 	window.onload = beginrefresh;
-</script>
+</script> -->
 </head>
 
 <body class="home">
@@ -47,7 +47,7 @@
 					<table>
 						<tr th:each="proposal,i:${proposals}">
 							<td>
-								<div class="row" style="width: 330%">
+								<div class="row" style="width: 430%">
 									<div class="panel panel-white post panel-shadow">
 										<div class="post-heading">
 											<div class="pull-left image">
@@ -112,11 +112,37 @@
 													<div class="col col-md-12">
 														<div class="row">
 															<h4>STATISTICS LOOKING THE GENDER</h4>
+															<h4>Total Stats:</h4>
+															Male <span class="pull-right strong"
+																th:text="${proposal.votesInfoGenero.maleVotes}"></span>
+															<div class="progress">
+																<div
+																	class="progress-bar progress-bar-warning progress-bar-striped active"
+																	role="progressbar"
+																	aria-valuenow="${proposal.votesInfoGenero.maleVotes}"
+																	aria-valuemin="0" aria-valuemax="100"
+																	th:style="'width:'+ ${proposal.votesInfoGenero.maleVotes}+'%;'"
+																	th:text="${proposal.votesInfoGenero.maleVotes}"></div>
+															</div>
+															Female<span class="pull-right strong"
+																th:text="${proposal.votesInfoGenero.femaleVotes}"></span>
+															<div class="progress">
+																<div
+																	class="progress-bar progress-bar-info progress-bar-striped active"
+																	role="progressbar"
+																	aria-valuenow="${proposal.votesInfoGenero.femaleVotes}"
+																	aria-valuemin="0" aria-valuemax="100"
+																	th:style="'width:'+ ${proposal.votesInfoGenero.femaleVotes}+'%;'"
+																	th:text="${proposal.votesInfoGenero.femaleVotes}"></div>
+															</div>
+														</div>
+														<div class="row">
 															<h4>Male Stats:</h4>
 															Yes <span class="pull-right strong"
 																th:text="${proposal.votesInfoGenero.malePerYes}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-success"
+																<div
+																	class="progress-bar progress-bar-success progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoGenero.malePerYes}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -126,7 +152,8 @@
 															No<span class="pull-right strong"
 																th:text="${proposal.votesInfoGenero.malePerNo}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-danger"
+																<div
+																	class="progress-bar progress-bar-danger progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoGenero.malePerNo}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -139,7 +166,8 @@
 															Yes <span class="pull-right strong"
 																th:text="${proposal.votesInfoGenero.femalePerYes}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-success"
+																<div
+																	class="progress-bar progress-bar-success progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoGenero.femalePerYes}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -149,7 +177,8 @@
 															No<span class="pull-right strong"
 																th:text="${proposal.votesInfoGenero.femalePerNo}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-danger"
+																<div
+																	class="progress-bar progress-bar-danger progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoGenero.femalePerNo}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -159,11 +188,48 @@
 														</div>
 														<h4>STATISTICS LOOKING THE AGE</h4>
 														<div class="row">
+															<h4>Total Stats:</h4>
+															Young <span class="pull-right strong"
+																th:text="${proposal.votesInfoRangoEdad.youngVotes}"></span>
+															<div class="progress">
+																<div
+																	class="progress-bar progress-bar-success progress-bar-striped active"
+																	role="progressbar"
+																	aria-valuenow="${proposal.votesInfoRangoEdad.youngVotes}"
+																	aria-valuemin="0" aria-valuemax="100"
+																	th:style="'width:'+ ${proposal.votesInfoRangoEdad.youngVotes}+'%;'"
+																	th:text="${proposal.votesInfoRangoEdad.youngVotes}"></div>
+															</div>
+															Adult<span class="pull-right strong"
+																th:text="${proposal.votesInfoRangoEdad.adultVotes}"></span>
+															<div class="progress">
+																<div
+																	class="progress-bar progress-bar-info progress-bar-striped active"
+																	role="progressbar"
+																	aria-valuenow="${proposal.votesInfoRangoEdad.adultVotes}"
+																	aria-valuemin="0" aria-valuemax="100"
+																	th:style="'width:'+ ${proposal.votesInfoRangoEdad.adultVotes}+'%;'"
+																	th:text="${proposal.votesInfoRangoEdad.adultVotes}"></div>
+															</div>
+															Old<span class="pull-right strong"
+																th:text="${proposal.votesInfoRangoEdad.oldVotes}"></span>
+															<div class="progress">
+																<div
+																	class="progress-bar progress-bar-warning progress-bar-striped active"
+																	role="progressbar"
+																	aria-valuenow="${proposal.votesInfoRangoEdad.oldVotes}"
+																	aria-valuemin="0" aria-valuemax="100"
+																	th:style="'width:'+ ${proposal.votesInfoRangoEdad.oldVotes}+'%;'"
+																	th:text="${proposal.votesInfoRangoEdad.oldVotes}"></div>
+															</div>
+														</div>
+														<div class="row">
 															<h4>Young people Stats:</h4>
 															Yes <span class="pull-right strong"
 																th:text="${proposal.votesInfoRangoEdad.youngPerYes}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-success"
+																<div
+																	class="progress-bar progress-bar-success progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoRangoEdad.youngPerYes}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -173,7 +239,8 @@
 															No<span class="pull-right strong"
 																th:text="${proposal.votesInfoRangoEdad.youngPerNo}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-danger"
+																<div
+																	class="progress-bar progress-bar-danger progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoRangoEdad.youngPerNo}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -186,7 +253,8 @@
 															Yes <span class="pull-right strong"
 																th:text="${proposal.votesInfoRangoEdad.adultgPerYes}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-success"
+																<div
+																	class="progress-bar progress-bar-success progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoRangoEdad.adultgPerYes}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -196,7 +264,8 @@
 															No<span class="pull-right strong"
 																th:text="${proposal.votesInfoRangoEdad.adultgPerNo}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-danger"
+																<div
+																	class="progress-bar progress-bar-danger progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoRangoEdad.adultgPerNo}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -210,7 +279,8 @@
 															Yes <span class="pull-right strong"
 																th:text="${proposal.votesInfoRangoEdad.oldPerYes}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-success"
+																<div
+																	class="progress-bar progress-bar-success progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoRangoEdad.oldPerYes}"
 																	aria-valuemin="0" aria-valuemax="100"
@@ -220,7 +290,8 @@
 															No<span class="pull-right strong"
 																th:text="${proposal.votesInfoRangoEdad.oldPerNo}"></span>
 															<div class="progress">
-																<div class="progress-bar progress-bar-danger"
+																<div
+																	class="progress-bar progress-bar-danger progress-bar-striped active"
 																	role="progressbar"
 																	aria-valuenow="${proposal.votesInfoRangoEdad.oldPerNo}"
 																	aria-valuemin="0" aria-valuemax="100"

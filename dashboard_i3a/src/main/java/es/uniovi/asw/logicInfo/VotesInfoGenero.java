@@ -15,6 +15,8 @@ public class VotesInfoGenero extends VotesInformation {
 	private int femaleNumberYes;
 	private int maleNumberNo;
 	private int femaleNumberNo;
+	private int maleVotes;
+	private int femaleVotes;
 
 	public VotesInfoGenero(List<VoteProposal> votes) {
 		super(votes);
@@ -53,6 +55,22 @@ public class VotesInfoGenero extends VotesInformation {
 		return femaleNumberNo;
 	}
 
+	public int getMaleVotes() {
+		return maleVotes;
+	}
+
+	public void setMaleVotes(int maleVotes) {
+		this.maleVotes = maleVotes;
+	}
+
+	public int getFemaleVotes() {
+		return femaleVotes;
+	}
+
+	public void setFemaleVotes(int femaleVotes) {
+		this.femaleVotes = femaleVotes;
+	}
+
 	public void setMoreInfo() {
 		setNumberOfVotes();
 		setPercentages();
@@ -60,11 +78,20 @@ public class VotesInfoGenero extends VotesInformation {
 	}
 
 	private void setPercentages() {
-		if (getTotal()!=0){
-			this.femalePerNo = getFemaleNumberNo()>0 ? (getFemaleNumberNo() /(double) getTotal()) * 100 : 0;
-			this.femalePerYes = getFemaleNumberYes()>0 ? (getFemaleNumberYes() / (double) getTotal()) * 100 : 0;
-			this.malePerNo = getFemaleNumberYes() > 0 ? (getMaleNumberNo() / (double) getTotal()) * 100: 0;
-			this.malePerYes = getMaleNumberYes() > 0? (getMaleNumberYes() / (double) getTotal()) * 100 : 0;
+		if (getTotal() != 0) {
+			this.femalePerNo = getFemaleNumberNo() > 0
+					? (getFemaleNumberNo() / (double) (getFemaleNumberNo() + getFemaleNumberYes())) * 100 : 0;
+			this.femalePerYes = getFemaleNumberYes() > 0
+					? (getFemaleNumberYes() / (double) (getFemaleNumberNo() + getFemaleNumberYes())) * 100 : 0;
+			this.malePerNo = getMaleNumberNo() > 0
+					? (getMaleNumberNo() / (double) (getMaleNumberNo() + getMaleNumberYes())) * 100 : 0;
+			this.malePerYes = getMaleNumberYes() > 0
+					? (getMaleNumberYes() / (double) (getMaleNumberNo() + getMaleNumberYes())) * 100 : 0;
+
+			this.maleVotes = (int) ((getMaleNumberNo() + getMaleNumberYes()) > 0
+					? (getMaleNumberNo() + getMaleNumberYes()) / (double) getTotal() * 100 : 0);
+			this.femaleVotes = (int) ((getFemaleNumberNo() + getFemaleNumberYes()) > 0
+					? (getFemaleNumberNo() + getFemaleNumberYes()) / (double) getTotal() * 100 : 0);
 		}
 	}
 

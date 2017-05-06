@@ -25,6 +25,10 @@ public class VotesInfoRangoEdad extends VotesInformation {
 	private double oldPerNo;
 	private double adultgPerNo;
 
+	private int youngVotes;
+	private int adultVotes;
+	private int oldVotes;
+
 	public VotesInfoRangoEdad(List<VoteProposal> list) {
 		super(list);
 		setMoreInfo();
@@ -78,6 +82,30 @@ public class VotesInfoRangoEdad extends VotesInformation {
 		return (int) adultgPerNo;
 	}
 
+	public int getYoungVotes() {
+		return youngVotes;
+	}
+
+	public void setYoungVotes(int youngVotes) {
+		this.youngVotes = youngVotes;
+	}
+
+	public int getAdultVotes() {
+		return adultVotes;
+	}
+
+	public void setAdultVotes(int adultVotes) {
+		this.adultVotes = adultVotes;
+	}
+
+	public int getOldVotes() {
+		return oldVotes;
+	}
+
+	public void setOldVotes(int oldVotes) {
+		this.oldVotes = oldVotes;
+	}
+
 	public void setMoreInfo() {
 		setNumberOfVotes();
 		setPercentages();
@@ -113,14 +141,23 @@ public class VotesInfoRangoEdad extends VotesInformation {
 	}
 
 	private void setPercentages() {
-		if (getTotal()>0){
-			this.youngPerYes = getYoungNumberYes()>0? (getYoungNumberYes() / (double) getTotal()) * 100 : 0;
-			this.youngPerNo = getYoungNumberYes()>0? (getYoungNumberNo() /(double) getTotal()) * 100 : 0;
-			this.adultgPerYes = getAdultNumberYes()>0? (getAdultNumberYes() /(double) getTotal()) * 100 : 0;
-			this.adultgPerNo = getAdultNumberNo()>0?(getAdultNumberNo() / (double) getTotal()) * 100 : 0;
-			this.oldPerYes = getOldNumberYes()>0 ? (getOldNumberYes() / (double) getTotal()) * 100 : 0;
-			this.oldPerNo = getOldNumberNo()>0 ? (getOldNumberNo() /(double) getTotal()) * 100 : 0;
-		}	
+		if (getTotal() > 0) {
+
+			int totalY = getYoungNumberNo() + getAdultNumberYes();
+			int totalA = getAdultNumberNo() + getAdultNumberYes();
+			int totalO = getOldNumberYes() + getOldNumberNo();
+
+			this.youngPerYes = getYoungNumberYes() > 0 ? (getYoungNumberYes() / (double) totalY) * 100 : 0;
+			this.youngPerNo = getYoungNumberNo() > 0 ? (getYoungNumberNo() / (double) totalY) * 100 : 0;
+			this.adultgPerYes = getAdultNumberYes() > 0 ? (getAdultNumberYes() / (double) totalA) * 100 : 0;
+			this.adultgPerNo = getAdultNumberNo() > 0 ? (getAdultNumberNo() / (double) totalA) * 100 : 0;
+			this.oldPerYes = getOldNumberYes() > 0 ? (getOldNumberYes() / (double) totalO) * 100 : 0;
+			this.oldPerNo = getOldNumberNo() > 0 ? (getOldNumberNo() / (double) totalO) * 100 : 0;
+
+			this.youngVotes = (int) (totalY > 0 ? totalY / (double) getTotal() * 100 : 0);
+			this.adultVotes = (int) (totalA > 0 ? totalA / (double) getTotal() * 100 : 0);
+			this.oldVotes = (int) (totalO > 0 ? totalO / (double) getTotal() * 100 : 0);
+		}
 	}
 
 	@Override
