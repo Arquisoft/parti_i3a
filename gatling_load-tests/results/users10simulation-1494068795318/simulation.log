@@ -1,0 +1,171 @@
+RUN	default.Users10Simulation		users10simulation	1494068795318	Testing system with 10 users	2.0
+USER	Users10Simulation	1	START	1494068796156	1494068796156
+USER	Users10Simulation	2	START	1494068796192	1494068796192
+USER	Users10Simulation	3	START	1494068796193	1494068796193
+USER	Users10Simulation	4	START	1494068796194	1494068796194
+USER	Users10Simulation	5	START	1494068796195	1494068796195
+USER	Users10Simulation	6	START	1494068796197	1494068796197
+USER	Users10Simulation	7	START	1494068796198	1494068796198
+USER	Users10Simulation	8	START	1494068796199	1494068796199
+USER	Users10Simulation	9	START	1494068796201	1494068796201
+USER	Users10Simulation	10	START	1494068796202	1494068796202
+REQUEST	Users10Simulation	6		request_login_screen	1494068796197	1494068796237	OK	 
+REQUEST	Users10Simulation	10		request_login_screen	1494068796203	1494068796237	OK	 
+REQUEST	Users10Simulation	3		request_login_screen	1494068796193	1494068796210	OK	 
+REQUEST	Users10Simulation	1		request_login_screen	1494068796185	1494068796205	OK	 
+REQUEST	Users10Simulation	8		request_login_screen	1494068796200	1494068796224	OK	 
+REQUEST	Users10Simulation	2		request_login_screen	1494068796192	1494068796212	OK	 
+REQUEST	Users10Simulation	4		request_login_screen	1494068796194	1494068796216	OK	 
+REQUEST	Users10Simulation	5		request_login_screen	1494068796196	1494068796212	OK	 
+REQUEST	Users10Simulation	7		request_login_screen	1494068796198	1494068796243	OK	 
+REQUEST	Users10Simulation	9		request_login_screen	1494068796201	1494068796245	OK	 
+REQUEST	Users10Simulation	4		error.css	1494068796338	1494068796358	OK	 
+REQUEST	Users10Simulation	10		error.css	1494068796337	1494068796382	OK	 
+REQUEST	Users10Simulation	3		error.css	1494068796337	1494068796378	OK	 
+REQUEST	Users10Simulation	7		error.css	1494068796337	1494068796358	OK	 
+REQUEST	Users10Simulation	2		error.css	1494068796336	1494068796398	OK	 
+REQUEST	Users10Simulation	9		error.css	1494068796336	1494068796398	OK	 
+REQUEST	Users10Simulation	10		request_bad_login	1494068796340	1494068796399	OK	 
+REQUEST	Users10Simulation	8		error.css	1494068796337	1494068796402	OK	 
+REQUEST	Users10Simulation	4		request_bad_login	1494068796339	1494068796405	OK	 
+REQUEST	Users10Simulation	6		request_bad_login	1494068796343	1494068796406	OK	 
+REQUEST	Users10Simulation	1		error.css	1494068796336	1494068796410	OK	 
+REQUEST	Users10Simulation	2		request_bad_login	1494068796339	1494068796410	OK	 
+REQUEST	Users10Simulation	5		request_bad_login	1494068796340	1494068796410	OK	 
+REQUEST	Users10Simulation	8		request_bad_login	1494068796339	1494068796411	OK	 
+REQUEST	Users10Simulation	5		error.css	1494068796336	1494068796411	OK	 
+REQUEST	Users10Simulation	7		request_bad_login	1494068796340	1494068796411	OK	 
+REQUEST	Users10Simulation	9		request_bad_login	1494068796339	1494068796414	OK	 
+REQUEST	Users10Simulation	1		request_bad_login	1494068796341	1494068796424	OK	 
+REQUEST	Users10Simulation	3		request_bad_login	1494068796339	1494068796425	OK	 
+REQUEST	Users10Simulation	6		error.css	1494068796337	1494068796430	OK	 
+REQUEST	Users10Simulation	5		bootstrap.min.js	1494068796360	1494068796604	OK	 
+REQUEST	Users10Simulation	2		bootstrap.min.js	1494068796360	1494068796604	OK	 
+REQUEST	Users10Simulation	8		bootstrap.min.js	1494068796377	1494068796613	OK	 
+REQUEST	Users10Simulation	7		bootstrap.min.js	1494068796359	1494068796619	OK	 
+REQUEST	Users10Simulation	4		bootstrap.min.js	1494068796361	1494068796625	OK	 
+REQUEST	Users10Simulation	6		bootstrap.min.js	1494068796360	1494068796625	OK	 
+REQUEST	Users10Simulation	9		bootstrap.min.js	1494068796360	1494068796625	OK	 
+REQUEST	Users10Simulation	3		bootstrap.min.js	1494068796361	1494068796627	OK	 
+REQUEST	Users10Simulation	10		bootstrap.min.js	1494068796382	1494068796644	OK	 
+REQUEST	Users10Simulation	1		bootstrap.min.js	1494068796377	1494068796645	OK	 
+REQUEST	Users10Simulation	9		bootstrap.min.css	1494068796343	1494068796646	OK	 
+REQUEST	Users10Simulation	2		bootstrap.min.css	1494068796349	1494068796647	OK	 
+REQUEST	Users10Simulation	4		bootstrap.min.css	1494068796342	1494068796657	OK	 
+REQUEST	Users10Simulation	6		bootstrap.min.css	1494068796343	1494068796657	OK	 
+REQUEST	Users10Simulation	7		bootstrap.min.css	1494068796342	1494068796658	OK	 
+REQUEST	Users10Simulation	5		bootstrap.min.css	1494068796349	1494068796658	OK	 
+REQUEST	Users10Simulation	3		bootstrap.min.css	1494068796349	1494068796658	OK	 
+REQUEST	Users10Simulation	1		bootstrap.min.css	1494068796342	1494068796660	OK	 
+REQUEST	Users10Simulation	8		bootstrap.min.css	1494068796342	1494068796660	OK	 
+REQUEST	Users10Simulation	10		bootstrap.min.css	1494068796342	1494068796665	OK	 
+REQUEST	Users10Simulation	3		request_go_back_login_screen	1494068801683	1494068801690	OK	 
+REQUEST	Users10Simulation	10		request_go_back_login_screen	1494068801683	1494068801690	OK	 
+REQUEST	Users10Simulation	8		request_go_back_login_screen	1494068801683	1494068801698	OK	 
+REQUEST	Users10Simulation	1		request_go_back_login_screen	1494068801683	1494068801698	OK	 
+REQUEST	Users10Simulation	9		request_go_back_login_screen	1494068801683	1494068801698	OK	 
+REQUEST	Users10Simulation	5		request_go_back_login_screen	1494068801683	1494068801699	OK	 
+REQUEST	Users10Simulation	2		request_go_back_login_screen	1494068801683	1494068801700	OK	 
+REQUEST	Users10Simulation	7		request_go_back_login_screen	1494068801683	1494068801700	OK	 
+REQUEST	Users10Simulation	4		request_go_back_login_screen	1494068801683	1494068801700	OK	 
+REQUEST	Users10Simulation	6		request_go_back_login_screen	1494068801683	1494068801700	OK	 
+REQUEST	Users10Simulation	3		request_good_login	1494068810682	1494068810770	OK	 
+REQUEST	Users10Simulation	4		request_good_login	1494068810702	1494068810782	OK	 
+REQUEST	Users10Simulation	9		request_good_login	1494068810692	1494068810786	OK	 
+REQUEST	Users10Simulation	5		request_good_login	1494068810702	1494068810791	OK	 
+REQUEST	Users10Simulation	9		u.jpg	1494068810800	1494068810820	OK	 
+REQUEST	Users10Simulation	4		dashboard.css	1494068810800	1494068810828	OK	 
+REQUEST	Users10Simulation	9		request_dashboard_screen	1494068810800	1494068810834	OK	 
+REQUEST	Users10Simulation	4		request_dashboard_screen_images	1494068810800	1494068810842	OK	 
+REQUEST	Users10Simulation	8		request_good_login	1494068810692	1494068810844	OK	 
+REQUEST	Users10Simulation	5		request_dashboard_screen	1494068810804	1494068810852	OK	 
+REQUEST	Users10Simulation	9		dashboard.css	1494068810800	1494068810814	OK	 
+REQUEST	Users10Simulation	7		request_good_login	1494068810702	1494068810866	OK	 
+REQUEST	Users10Simulation	3		request_dashboard_screen_images	1494068810825	1494068810869	OK	 
+REQUEST	Users10Simulation	5		request_dashboard_screen_images	1494068810805	1494068810873	OK	 
+REQUEST	Users10Simulation	9		request_dashboard_screen_images	1494068810801	1494068810881	OK	 
+REQUEST	Users10Simulation	8		request_dashboard_screen_images	1494068810853	1494068810921	OK	 
+REQUEST	Users10Simulation	7		u.jpg	1494068810874	1494068810921	OK	 
+REQUEST	Users10Simulation	8		u.jpg	1494068810853	1494068810921	OK	 
+REQUEST	Users10Simulation	7		request_dashboard_screen	1494068810875	1494068810921	OK	 
+REQUEST	Users10Simulation	5		dashboard.css	1494068810804	1494068810921	OK	 
+REQUEST	Users10Simulation	3		dashboard.css	1494068810824	1494068810922	OK	 
+REQUEST	Users10Simulation	5		u.jpg	1494068810804	1494068810921	OK	 
+REQUEST	Users10Simulation	10		request_good_login	1494068810682	1494068810922	OK	 
+REQUEST	Users10Simulation	1		request_good_login	1494068810692	1494068810938	OK	 
+REQUEST	Users10Simulation	7		dashboard.css	1494068810874	1494068810938	OK	 
+REQUEST	Users10Simulation	2		request_good_login	1494068810703	1494068810938	OK	 
+REQUEST	Users10Simulation	8		request_dashboard_screen	1494068810853	1494068810922	OK	 
+REQUEST	Users10Simulation	6		request_good_login	1494068810702	1494068810938	OK	 
+REQUEST	Users10Simulation	4		u.jpg	1494068810800	1494068810938	OK	 
+REQUEST	Users10Simulation	7		request_dashboard_screen_images	1494068810875	1494068810939	OK	 
+REQUEST	Users10Simulation	3		request_dashboard_screen	1494068810825	1494068810943	OK	 
+REQUEST	Users10Simulation	4		request_dashboard_screen	1494068810800	1494068810944	OK	 
+REQUEST	Users10Simulation	3		u.jpg	1494068810824	1494068810954	OK	 
+REQUEST	Users10Simulation	1		u.jpg	1494068810943	1494068810961	OK	 
+REQUEST	Users10Simulation	10		dashboard.css	1494068810943	1494068810968	OK	 
+REQUEST	Users10Simulation	8		dashboard.css	1494068810852	1494068810974	OK	 
+REQUEST	Users10Simulation	2		dashboard.css	1494068810946	1494068810977	OK	 
+REQUEST	Users10Simulation	1		dashboard.css	1494068810943	1494068810981	OK	 
+REQUEST	Users10Simulation	2		u.jpg	1494068810947	1494068810986	OK	 
+REQUEST	Users10Simulation	10		u.jpg	1494068810947	1494068810990	OK	 
+REQUEST	Users10Simulation	6		dashboard.css	1494068810946	1494068810991	OK	 
+REQUEST	Users10Simulation	1		request_dashboard_screen_images	1494068810946	1494068810997	OK	 
+REQUEST	Users10Simulation	10		request_dashboard_screen_images	1494068810947	1494068811003	OK	 
+REQUEST	Users10Simulation	10		request_dashboard_screen	1494068810947	1494068811008	OK	 
+REQUEST	Users10Simulation	6		u.jpg	1494068810946	1494068811023	OK	 
+REQUEST	Users10Simulation	6		request_dashboard_screen	1494068810947	1494068811023	OK	 
+REQUEST	Users10Simulation	1		request_dashboard_screen	1494068810944	1494068811023	OK	 
+REQUEST	Users10Simulation	6		request_dashboard_screen_images	1494068810947	1494068811023	OK	 
+REQUEST	Users10Simulation	2		request_dashboard_screen_images	1494068810947	1494068811023	OK	 
+REQUEST	Users10Simulation	2		request_dashboard_screen	1494068810947	1494068811023	OK	 
+REQUEST	Users10Simulation	9		request_refresh_dashboard_1	1494068815925	1494068815962	OK	 
+REQUEST	Users10Simulation	5		request_refresh_dashboard_1	1494068815945	1494068815977	OK	 
+REQUEST	Users10Simulation	7		request_refresh_dashboard_1	1494068815945	1494068815978	OK	 
+REQUEST	Users10Simulation	4		request_refresh_dashboard_1	1494068815955	1494068815992	OK	 
+REQUEST	Users10Simulation	3		request_refresh_dashboard_1	1494068815976	1494068816003	OK	 
+REQUEST	Users10Simulation	8		request_refresh_dashboard_1	1494068815995	1494068816013	OK	 
+REQUEST	Users10Simulation	6		request_refresh_dashboard_1	1494068816036	1494068816060	OK	 
+REQUEST	Users10Simulation	10		request_refresh_dashboard_1	1494068816036	1494068816062	OK	 
+REQUEST	Users10Simulation	2		request_refresh_dashboard_1	1494068816036	1494068816069	OK	 
+REQUEST	Users10Simulation	1		request_refresh_dashboard_1	1494068816046	1494068816074	OK	 
+REQUEST	Users10Simulation	9		request_refresh_dashboard_1	1494068820944	1494068820971	OK	 
+REQUEST	Users10Simulation	7		request_refresh_dashboard_1	1494068820983	1494068821006	OK	 
+REQUEST	Users10Simulation	5		request_refresh_dashboard_1	1494068820983	1494068821008	OK	 
+REQUEST	Users10Simulation	4		request_refresh_dashboard_1	1494068820993	1494068821016	OK	 
+REQUEST	Users10Simulation	3		request_refresh_dashboard_1	1494068821004	1494068821027	OK	 
+REQUEST	Users10Simulation	8		request_refresh_dashboard_1	1494068821014	1494068821033	OK	 
+REQUEST	Users10Simulation	6		request_refresh_dashboard_1	1494068821053	1494068821069	OK	 
+REQUEST	Users10Simulation	2		request_refresh_dashboard_1	1494068821063	1494068821088	OK	 
+REQUEST	Users10Simulation	10		request_refresh_dashboard_1	1494068821063	1494068821088	OK	 
+REQUEST	Users10Simulation	1		request_refresh_dashboard_1	1494068821073	1494068821097	OK	 
+REQUEST	Users10Simulation	9		request_refresh_dashboard_3	1494068827976	1494068828006	OK	 
+REQUEST	Users10Simulation	7		request_refresh_dashboard_3	1494068828016	1494068828050	OK	 
+REQUEST	Users10Simulation	5		request_refresh_dashboard_3	1494068828016	1494068828051	OK	 
+REQUEST	Users10Simulation	3		request_refresh_dashboard_3	1494068828036	1494068828063	OK	 
+REQUEST	Users10Simulation	4		request_refresh_dashboard_3	1494068828026	1494068828064	OK	 
+REQUEST	Users10Simulation	8		request_refresh_dashboard_3	1494068828036	1494068828070	OK	 
+REQUEST	Users10Simulation	6		request_refresh_dashboard_3	1494068828086	1494068828103	OK	 
+REQUEST	Users10Simulation	10		request_refresh_dashboard_3	1494068828086	1494068828103	OK	 
+REQUEST	Users10Simulation	2		request_refresh_dashboard_3	1494068828096	1494068828113	OK	 
+REQUEST	Users10Simulation	1		request_refresh_dashboard_3	1494068828116	1494068828132	OK	 
+REQUEST	Users10Simulation	9		request_refresh_dashboard_4	1494068835007	1494068835036	OK	 
+USER	Users10Simulation	9	END	1494068796201	1494068835041
+REQUEST	Users10Simulation	5		request_refresh_dashboard_4	1494068835047	1494068835063	OK	 
+USER	Users10Simulation	5	END	1494068796195	1494068835067
+REQUEST	Users10Simulation	7		request_refresh_dashboard_4	1494068835057	1494068835075	OK	 
+USER	Users10Simulation	7	END	1494068796198	1494068835079
+REQUEST	Users10Simulation	4		request_refresh_dashboard_4	1494068835066	1494068835106	OK	 
+REQUEST	Users10Simulation	3		request_refresh_dashboard_4	1494068835066	1494068835106	OK	 
+USER	Users10Simulation	3	END	1494068796193	1494068835111
+USER	Users10Simulation	4	END	1494068796194	1494068835111
+REQUEST	Users10Simulation	8		request_refresh_dashboard_4	1494068835076	1494068835119	OK	 
+USER	Users10Simulation	8	END	1494068796199	1494068835122
+REQUEST	Users10Simulation	6		request_refresh_dashboard_4	1494068835097	1494068835131	OK	 
+USER	Users10Simulation	6	END	1494068796197	1494068835134
+REQUEST	Users10Simulation	10		request_refresh_dashboard_4	1494068835107	1494068835136	OK	 
+USER	Users10Simulation	10	END	1494068796202	1494068835139
+REQUEST	Users10Simulation	1		request_refresh_dashboard_4	1494068835122	1494068835146	OK	 
+REQUEST	Users10Simulation	2		request_refresh_dashboard_4	1494068835122	1494068835147	OK	 
+USER	Users10Simulation	1	END	1494068796156	1494068835150
+USER	Users10Simulation	2	END	1494068796192	1494068835150

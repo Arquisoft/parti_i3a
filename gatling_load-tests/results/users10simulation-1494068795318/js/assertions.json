@@ -1,0 +1,10 @@
+{
+  "simulation": "default.Users10Simulation",
+  "simulationId": "users10simulation",
+  "start": 1494068795318,
+  "description": "Testing system with 10 users",
+  "scenarios": ["Users10Simulation"],
+  "assertions": [
+
+  ]
+}
