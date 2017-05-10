@@ -4,7 +4,7 @@
 [![GuestUsers Heroku](https://img.shields.io/badge/View%20on-Heroku-ff69b4.svg)](http://participants-i3a.herokuapp.com/participants_i3a/) 
 
 
-# Description
+# [parti_i3a](https://arquisoft.github.io/parti_i3a/)
 
 This repository contains the project for the Software Architecture subject.
 
@@ -18,7 +18,13 @@ When you start the application, you can use one of this links:
 - [Participants](http://participants-i3a.herokuapp.com/participants_i3a). In this link, you can manage your account.
 - [Dashboard](http://localhost:8080/dashboard_i3a). In this link, you can view the participation statistics
 
-To use these services, the first thing you have to do is provide some credentials to access. If you don't have any credentials, you can't use the web application.
+Use one of the users that are already registered in the database:
+> **login**: pablo@example.com **password**: asdf
+
+> **login**: david@example.com **password**: asdf
+
+> **login**: freije@example.com **password**: asdf
+
 
 # Wiki
 
@@ -29,7 +35,7 @@ You can have also have the [quality attributes](https://github.com/Arquisoft/par
 Our [Wiki of the Tests](https://github.com/Arquisoft/parti_i3a/wiki/Testing) show information about all kind of tests that we have developed.
 
 
-You can also find other pages helping you in how to run the project ([How to lunch participants](https://github.com/Arquisoft/parti_i3a/wiki/How-to-lunch-Participants) or [how to run dashboard](https://github.com/Arquisoft/parti_i3a/wiki/How-to-run-Dashboard))
+You can also find other pages helping you in how to run the project ([How to lunch participants](https://github.com/Arquisoft/parti_i3a/wiki/How-to-run-Participants) or [how to run dashboard](https://github.com/Arquisoft/parti_i3a/wiki/How-to-run-Dashboard))
 
 # Collaborators
 
