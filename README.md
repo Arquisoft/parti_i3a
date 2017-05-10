@@ -1,43 +1,35 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6808a4f5333e4f73a0ebeac78b3fe57b)](https://www.codacy.com/app/pablogarciamiranda/parti_i3a?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Arquisoft/parti_i3a&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.org/Arquisoft/parti_i3a.svg?branch=master)](https://travis-ci.org/Arquisoft/parti_i3a)
 [![codecov](https://codecov.io/gh/Arquisoft/parti_i3a/branch/master/graph/badge.svg)](https://codecov.io/gh/Arquisoft/parti_i3a)
-
-
-# Parti_i3a
-
-[![Join the chat at https://gitter.im/Arquisoft/parti_i3a](https://badges.gitter.im/Arquisoft/parti_i3a.svg)](https://gitter.im/Arquisoft/parti_i3a?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GuestUsers Heroku](https://img.shields.io/badge/View%20on-Heroku-ff69b4.svg)](http://participants-i3a.herokuapp.com/participants_i3a/) 
 
 
 # Description
 
 This repository contains the project for the Software Architecture subject.
-The purpose of the project is create a web application for the town hall, to manage a proposals service. The main goal is to share proposals with the town people throught this service, with the posibility of make comments, vote them or send other proposals. The council staff use this service to take in account the better proposals. To do that the service provides information and statistics of the proposals in the database in real time.
 
-# Service
+The purpose of the project is create a web application for the town hall, which will be in charge of managing the citizen participation. The citizens will have the possibility of make proposals which will be voted and commented by other users. The council staff will use this application to decide which are the best proposals of the city.
 
-When you start the service, you have two links to use it:
-- [Participants service](http://localhost:8080/participants_i3a). In this link, you can manage your account.
-- [Dashboard service](http://localhost:8080/dashboard_i3a). In this link, you can manage the proposals information.
+The dashboard will be responsible of updating the information dynamically and in real time without user interaction. It will reflect the changes that are produced through a small testing simulator that generate random events such as Proposals, Votes and Comments to the Kafka Stream.
+
+# Project
+
+When you start the application, you can use one of this links:
+- [Participants](http://participants-i3a.herokuapp.com/participants_i3a). In this link, you can manage your account.
+- [Dashboard](http://localhost:8080/dashboard_i3a). In this link, you can view the participation statistics
 
 To use these services, the first thing you have to do is provide some credentials to access. If you don't have any credentials, you can't use the web application.
 
-
-# Stakeholders
-
-    1. Course teachers
-    2. Students that develop the assigment.
-    3. Students that develop the other part of the assigment.
-    4. System administrator.
-    5. Citizens.
-    6. Council stagg, councilmen and other authorities.
-
 # Wiki
 
-In our [wiki](https://github.com/Arquisoft/parti_i3a/wiki) you can find information about the versions of the project and the meetings we have meetings we had during development in this [link](https://github.com/Arquisoft/parti_i3a/wiki/Versions-and-meetings).
+In our [wiki](https://github.com/Arquisoft/parti_i3a/wiki) you can find information about the [versions of the project and the meetings we have done during the development](https://github.com/Arquisoft/parti_i3a/wiki/Versions-and-meetings).
 
-Then you also have the [quality attributes](https://github.com/Arquisoft/parti_i3a/wiki/Quality-Attributes) and [quality scenarios](https://github.com/Arquisoft/parti_i3a/wiki/Quality-Scenarios) of our project.
+You can have also have the [quality attributes](https://github.com/Arquisoft/parti_i3a/wiki/Quality-Attributes) and [quality scenarios](https://github.com/Arquisoft/parti_i3a/wiki/Quality-Scenarios) of our project.
 
-You also can see another pages for some help to run the service ([How to lunch kafka](https://github.com/Arquisoft/parti_i3a/wiki/How-to-lunch-Kafka) or [how to run dashboard](https://github.com/Arquisoft/parti_i3a/wiki/How-to-run-Dashboard))
+Our [Wiki of the Tests](https://github.com/Arquisoft/parti_i3a/wiki/Testing) show information about all kind of tests that we have developed.
+
+
+You can also find other pages helping you in how to run the project ([How to lunch participants](https://github.com/Arquisoft/parti_i3a/wiki/How-to-lunch-Participants) or [how to run dashboard](https://github.com/Arquisoft/parti_i3a/wiki/How-to-run-Dashboard))
 
 # Collaborators
 
