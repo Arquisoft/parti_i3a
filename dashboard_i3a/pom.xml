@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>es.uniovi.asw</groupId>
 	<artifactId>dashboard_i3a</artifactId>
-	<name>dashboard_i3a</name>
+	<name>dashboard-i3a</name>
 	<version>0.0.1</version>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

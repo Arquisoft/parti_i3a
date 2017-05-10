@@ -14,7 +14,7 @@ public class AgeCalculatorTest {
 		java.sql.Date sqlDate = DateConversor.createSqlDate("09-05-1996");
 
 		int age = AgeCalculator.calculateAge(sqlDate);
-		assertEquals(20, age);
+		assertEquals(21, age);
 
 	}
 
